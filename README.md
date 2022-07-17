@@ -13,7 +13,7 @@ Don't worry we got you covered. Enter a near meaningful gibberish :D, our recomm
 ![Screenshot (10)](https://user-images.githubusercontent.com/72373564/179395843-a32c3918-c220-47f7-acf2-56a53e1846b7.png)
 
 4. Located your file. Oh Wait! click on that file and **directly reach your destination**, even it be a website URL!
-![Screenshot (11)](https://user-images.githubusercontent.com/72373564/179395845-7c7ba8fb-4a4a-41f9-9f32-39846ce86bcd.png)
+![Screenshot (17)](https://user-images.githubusercontent.com/72373564/179401520-144b0b62-7c6a-4ed6-8456-a24e2fdd2c27.png)
 
 5. Want to remove a tag? Just click on your tag and click **'Remove Tag'**.
 ![Screenshot (14)](https://user-images.githubusercontent.com/72373564/179395849-080d968f-a78b-4870-894c-bcba5164cadd.png)
