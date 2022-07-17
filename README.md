@@ -23,3 +23,11 @@ Don't worry we got you covered. Enter a near meaningful gibberish :D, our recomm
 
 ## Requirement:
 Qt
+
+## DEMO
+![Screenshot (10)](https://user-images.githubusercontent.com/72373564/179395843-a32c3918-c220-47f7-acf2-56a53e1846b7.png)
+![Screenshot (11)](https://user-images.githubusercontent.com/72373564/179395845-7c7ba8fb-4a4a-41f9-9f32-39846ce86bcd.png)
+![Screenshot (14)](https://user-images.githubusercontent.com/72373564/179395849-080d968f-a78b-4870-894c-bcba5164cadd.png)
+![Screenshot (12)](https://user-images.githubusercontent.com/72373564/179395852-29183315-0227-4b54-9b6d-82bfc96e0106.png)
+![Screenshot (13)](https://user-images.githubusercontent.com/72373564/179395853-58657942-8272-4d45-b148-84bd32411e99.png)
+![Screenshot (9)](https://user-images.githubusercontent.com/72373564/179395846-f309817b-cdbb-47ee-ac82-3ed564b63c88.png)
