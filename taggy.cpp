@@ -596,7 +596,7 @@ void  Taggy::SORTFILELIST()
                 }
             }
         }
-        //update FILE_LIST IN SECOND TAB
+        //update BROWSE_LIST IN SECOND TAB
         UPDATE_BROWSELIST();
     }
 }
@@ -686,7 +686,7 @@ void Taggy::REMOVEFROMDATABASE()
               DATABASE.removeAt(LISTindex);
               ui->tabWidget->setCurrentIndex(0);
               SAVEDATABASE();
-              //update FILE_LIST IN SECOND TAB
+              //update BROWSE_LIST IN SECOND TAB
               UPDATE_BROWSELIST();
           } else {
               qDebug() << "Yes was *not* clicked";
@@ -720,7 +720,7 @@ void Taggy::ADDTODATABASE(QString data)
 
     DATABASE<<data;
     ui->tabWidget->setCurrentIndex(0);
-    //update FILE_LIST IN SECOND TAB
+    //update BROWSE_LIST IN SECOND TAB
     SAVEDATABASE();
     UPDATE_BROWSELIST();
 }
