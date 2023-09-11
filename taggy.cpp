@@ -20,70 +20,35 @@ float wordmatching(const QString &wordq1,const QString &wordq2)
     strcpy(word1,wordq1.toStdString().c_str());
     strcpy(word2,wordq2.toStdString().c_str());
 
-    int word1len, word2len ,k,i,j;
-
+    int len1 = strlen(word1);
+    int len2 = strlen(word2);
     //tolower
-    for(i=0;i<=(int)strlen(word1);i++){
+    for(i=0;i<len1;i++){
         if(word1[i]>=65&&word1[i]<=90)
             word1[i]=word1[i]+32;
     }
     //tolower
-    for(i=0;i<=(int)strlen(word2);i++){
+    for(i=0;i<len2;i++){
         if(word2[i]>=65&&word2[i]<=90)
             word2[i]=word2[i]+32;
     }
 
-    word1len=strlen(word1);
-    word2len=strlen(word2);
-    float finalscore=0;
-    int jstart;
-    for (jstart=0; jstart<word2len;jstart++)
-    {
+    vector<vector<int>> dp(len1 + 1, vector<int>(len2 + 1, 0));
 
-        float score=0,skipped,count;
-        int countstop=0;
-        for (i=0; i<word1len;i++)
-        {
-            count=-1;
-            k=i;
-            countstop=0;
-            skipped=0;
-            for (j=jstart; j<word2len;j++)
-            {
-
-                if (word1[k]==word2[j])
-                {
-                    if (countstop==0 )
-                    {
-                        if (count>=0 )
-                        {  count=count*1.5+1-skipped/3;
-
-                            skipped=0; }
-                        else
-                        {
-                            count=count+1;
-                        }
-                        k=k+1;
-                        if (k>word1len)
-                            countstop=1;
-                    }
-                }
-                else
-                {
-                    if(count>=0)
-                        skipped=skipped+1;
-
-                }
+    for (int i = 0; i <= len1; i++) {
+        for (int j = 0; j <= len2; j++) {
+            if (i == 0) {
+                dp[i][j] = j;
+            } else if (j == 0) {
+                dp[i][j] = i;
+            } else if (word1[i - 1] == word2[j - 1]) {
+                dp[i][j] = dp[i - 1][j - 1];
+            } else {
+                dp[i][j] = 1 + min({dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]});
             }
-            if(count>=0)
-                score=score+count;
-        }
-        if (finalscore<score)
-        {
-            finalscore=score;
         }
     }
-    return(finalscore);
+    return dp[len1][len2];
 }
 
 Taggy::Taggy(QWidget *parent) :
